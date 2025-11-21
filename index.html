@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mrittika - মৃত্তিকা | Handmade Women's Jewelry</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="images/logo.png" alt="Mrittika logo" class="logo">
+        <div class="brand-text">
+          <h1>Mrittika <span class="bn">মৃত্তিকা</span></h1>
+          <p class="tagline">Handmade jewelry for modern women</p>
+        </div>
+      </div>
+      <nav class="top-nav">
+        <a href="#featured">Featured</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#all-items">All Items</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="cart">
+        <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="featured">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <img src="images/hero-product.png" alt="Handmade jewelry" class="hero-image">
+          <div class="gallery-thumbs">
+            <img src="images/gallery1.png" alt="">
+            <img src="images/gallery2.png" alt="">
+            <img src="images/gallery3.png" alt="">
+            <img src="images/gallery4.png" alt="">
+          </div>
+        </div>
+        <aside class="hero-right">
+          <h2 class="product-title">Classic Jewelry Combo</h2>
+          <p class="product-sub">Handmade bracelet + ring set — delicate, timeless.</p>
+          <div class="price-row">
+            <span class="price">৳ 650</span>
+            <span class="badge">Best Seller</span>
+          </div>
+
+          <div class="options">
+            <label>Color:
+              <select id="colorSelect">
+                <option>Gold</option>
+                <option>Rose Gold</option>
+                <option>Silver</option>
+              </select>
+            </label>
+            <label>Size:
+              <select id="sizeSelect">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="quantity">
+            <button class="qty-btn" id="decrease">−</button>
+            <input type="number" id="qty" value="1" min="1">
+            <button class="qty-btn" id="increase">+</button>
+          </div>
+
+          <div class="cta-row">
+            <button id="addToCart" class="btn primary">অর্ডার করুন</button>
+            <button id="buyNow" class="btn outline">Buy Now</button>
+          </div>
+
+          <ul class="features">
+            <li>✨ ১০০% হাতের তৈরি</li>
+            <li>🌿 প্রতিটি টুকরো ইউনিক</li>
+            <li>🎁 উপহার প্যাকিং উপলব্ধ</li>
+          </ul>
+
+          <div class="trust">
+            <img src="images/trust-badge.png" alt="Trust badge">
+            <img src="images/payment-icons.png" alt="Payment icons">
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Description -->
+    <section class="description container">
+      <h3>পণ্যের বিবরণ</h3>
+      <p>এই Classic Jewelry Combo-টি দক্ষ কারিগরদের দ্বারা সাবধানে তৈরি — সূক্ষ্ম নকশা, টেকসই উপকরণ, এবং প্রতিটি টুকরোতে বিশেষ যত্ন।</p>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="details">Details</button>
+        <button class="tab" data-tab="materials">Materials</button>
+        <button class="tab" data-tab="shipping">Shipping</button>
+      </div>
+      <div class="tab-content" id="details">
+        <p>Bracelet: plated brass with glass beads. Ring: adjustable plated brass. Avoid water to preserve finish.</p>
+      </div>
+      <div class="tab-content hidden" id="materials">
+        <p>Materials: Brass, glass beads, plating (gold/rose gold/silver).</p>
+      </div>
+      <div class="tab-content hidden" id="shipping">
+        <p>Shipping: 3-7 business days nationwide. Express available at checkout.</p>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery container" id="gallery">
+      <h3>Image Gallery</h3>
+      <div class="gallery-grid">
+        <img src="images/gallery1.png" alt="">
+        <img src="images/gallery2.png" alt="">
+        <img src="images/gallery3.png" alt="">
+        <img src="images/gallery4.png" alt="">
+      </div>
+    </section>
+
+    <!-- Related / All Items -->
+    <section class="all-items container" id="all-items">
+      <h3>Shop All Items</h3>
+      <div class="items-grid">
+        <div class="shop-item"><img src="images/item1.png" alt=""><h4>Delicate Earrings</h4><p>৳ 350</p></div>
+        <div class="shop-item"><img src="images/item2.png" alt=""><h4>Beaded Bracelet</h4><p>৳ 420</p></div>
+        <div class="shop-item"><img src="images/item3.png" alt=""><h4>Stackable Rings</h4><p>৳ 280</p></div>
+        <div class="shop-item"><img src="images/item4.png" alt=""><h4>Charm Anklet</h4><p>৳ 390</p></div>
+        <div class="shop-item"><img src="images/item5.png" alt=""><h4>Pendant Necklace</h4><p>৳ 720</p></div>
+        <div class="shop-item"><img src="images/item6.png" alt=""><h4>Gift Combo</h4><p>৳ 1,200</p></div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews container">
+      <h3>Customer Reviews</h3>
+      <div class="review">
+        <strong>আশা</strong>
+        <p>“প্রোডাক্টটির মান চমৎকার — প্যাকিংও সুন্দর ছিল।”</p>
+      </div>
+      <div class="review">
+        <strong>সাবা</strong>
+        <p>“দ্রুত ডেলিভারি এবং গিফ্ট প্যাকিংটি আমার বন্ধুকে খুব ভালো লেগেছে।”</p>
+      </div>
+    </section>
+
+    <!-- Contact / Footer CTA -->
+    <section class="contact-cta container" id="contact">
+      <h3>চাহিদা থাকলে সরাসরি অর্ডার করুন</h3>
+      <p>যোগাযোগ: <a href="tel:+8801791677361">+880 17916 77361</a> | Email: webtracker61@gmail.com</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mrittika (মৃত্তিকা). All rights reserved.</p>
+      <small><a href="#">Terms</a> • <a href="#">Privacy</a></small>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
