@@ -264,6 +264,56 @@ body{font-family:Inter, system-ui, -apple-system, "Noto Sans Bengali", sans-seri
   background: var(--accent-dark);
 }
 
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.about-column {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.about-column h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.about-column ul {
+    padding-left: 18px;
+    margin: 10px 0;
+}
+
+.about-column ul li {
+    margin-bottom: 6px;
+}
+
+.bn { 
+    font-family: "Noto Sans Bengali", sans-serif; 
+}
+
+.en {
+    font-family: "Inter", sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 @media (max-width: 900px) {
   .items-grid {
     grid-template-columns: repeat(2,1fr);
