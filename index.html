@@ -235,5 +235,15 @@
   </footer>
 
   <script src="js/app.js"></script>
+
+  <script>
+function orderNow(productName, productImage, productLink) {
+  const phoneNumber = "8801814973095"; // Replace with your WhatsApp number
+  const message = `Hello! I would like to order:\n\nProduct: ${productName}\nProduct Link: ${productLink}\nProduct Image: ${productImage}\n\nPlease confirm my order.`;
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+</script>
+
 </body>
 </html>
