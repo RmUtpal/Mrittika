@@ -47,9 +47,9 @@ body{font-family:Inter, system-ui, -apple-system, "Noto Sans Bengali", sans-seri
 .cta-row{display:flex; gap:10px; margin-top:10px}
 .btn{padding:12px 18px; border-radius:10px; border:none; cursor:pointer; font-weight:700}
 .btn.primary{background:var(--accent); color:#fff; box-shadow:0 8px 20px rgba(231,127,163,0.18)}
-.btn.outline{background:transparent; border:2px solid var(--accent); color:var(--accent)}
+.btn.outline{background:transparent; border:3px solid var(--accent); color:var(--accent)}
 
-.features{list-style:none; padding:0; margin:12px 0 0}
+.features{list-style:none; padding:0; margin:10px 0 0}
 .features li{margin:4px 0; color:var(--muted)}
 
 .trust img{height:72px; margin-right:8px; margin-top:12px}
