@@ -49,8 +49,8 @@ body{font-family:Inter, system-ui, -apple-system, "Noto Sans Bengali", sans-seri
 .btn.primary{background:var(--accent); color:#fff; box-shadow:0 8px 20px rgba(231,127,163,0.18)}
 .btn.outline{background:transparent; border:2px solid var(--accent); color:var(--accent)}
 
-.features{list-style:none; padding:0; margin:14px 0 0}
-.features li{margin:6px 0; color:var(--muted)}
+.features{list-style:none; padding:0; margin:12px 0 0}
+.features li{margin:4px 0; color:var(--muted)}
 
 .trust img{height:72px; margin-right:8px; margin-top:12px}
 
