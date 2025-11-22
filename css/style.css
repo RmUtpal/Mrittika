@@ -18,8 +18,8 @@ body{font-family:Inter, system-ui, -apple-system, "Noto Sans Bengali", sans-seri
 .brand{display:flex; align-items:center; gap:12px;}
 .logo{width:68px; height:68px; object-fit:cover; border-radius:50%; background:#fff}
 .brand-text h1{margin:0; font-size:20px; color:var(--accent-dark)}
-.brand-text .bn{font-family:"Noto Sans Bengali", sans-serif; display:block; font-size:14px}
-.tagline{margin:0; color:var(--muted); font-size:13px}
+.brand-text .bn{font-family:"Noto Sans Bengali", sans-serif; display:block; font-size:18px}
+.tagline{margin:0; color:var(--muted); font-size:15px}
 
 .top-nav a{margin:0 8px; text-decoration:none; color:var(--muted); font-weight:600}
 .cart button{background:transparent; border:1px solid #ffdfe8; padding:8px 10px; border-radius:8px}
@@ -52,7 +52,7 @@ body{font-family:Inter, system-ui, -apple-system, "Noto Sans Bengali", sans-seri
 .features{list-style:none; padding:0; margin:14px 0 0}
 .features li{margin:6px 0; color:var(--muted)}
 
-.trust img{height:36px; margin-right:8px; margin-top:12px}
+.trust img{height:72px; margin-right:8px; margin-top:12px}
 
 .description{background:#fff; margin-top:20px; padding:18px; border-radius:12px}
 .tabs{display:flex; gap:8px; margin-top:12px}
