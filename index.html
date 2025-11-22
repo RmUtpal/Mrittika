@@ -146,10 +146,9 @@
       </div>
     </section>
 
-    
-   <!-- Reviews -->
+  <!-- Reviews -->
 <section class="reviews container">
-  <h3>Customer Reviews</h3>
+  <h3 class="review-title">Customer Reviews</h3>
 
   <div class="review-grid">
 
@@ -185,7 +184,7 @@
       <p>“দারুন সার্ভিস! প্যাকেটিং একেবারে পারফেক্ট।”</p>
     </div>
 
-    <!-- Hidden Reviews (will show on button click) -->
+    <!-- Hidden Reviews -->
     <div class="review-card hidden-review">
       <img src="images/review5.jpg" alt="">
       <strong>তামান্না হক</strong>
@@ -202,18 +201,20 @@
 
   </div>
 
-  <!-- Show More Button -->
   <button id="showMoreBtn" class="show-more-btn">See More Reviews</button>
-
 </section>
 
 <script>
   document.getElementById("showMoreBtn").addEventListener("click", function () {
     const hiddenReviews = document.querySelectorAll(".hidden-review");
-    hiddenReviews.forEach(r => r.style.display = "block");
-    this.style.display = "none"; 
+    hiddenReviews.forEach(card => {
+      card.style.display = "block";
+      card.classList.add("fade-in");
+    });
+    this.style.display = "none";
   });
 </script>
+
 
     
     <!-- Contact / Footer CTA -->
