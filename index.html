@@ -61,10 +61,11 @@
           </div>
         </div>
         <aside class="hero-right">
-          <h2 class="product-title">Classic Jewelry Combo</h2>
-          <p class="product-sub">Handmade bracelet + ring set — delicate, timeless.</p>
+          <h2 class="product-title">Authentic Pearl Jewelry Set</h2>
+          <p class="product-sub">Neckless/bracelet + ring set — delicate.</p>
           <div class="price-row">
-            <span class="price">৳ 650</span>
+            <span class="old-price">১৬০০ টাকা</span>
+            <span class="price">১২০০ টাকা</span>
             <span class="badge">Best Seller</span>
           </div>
 
@@ -172,21 +173,36 @@
 
  <!--------- Order Form--------- -->     
 <div class="order-form">
-    <input type="text" id="productName" placeholder="Enter product name" required>
+    <input type="text" id="customerName" placeholder="আপনার নাম" required>
+    <input type="text" id="customerPhone" placeholder="আপনার ফোন নাম্বার" required>
+    <input type="text" id="customerAddress" placeholder="আপনার ঠিকানা" required>
+    <input type="text" id="productName" placeholder="Product name" required>
+
     <button id="orderButton">Send Order</button>
 </div>
 
 <script>
     document.getElementById("orderButton").onclick = function() {
-        var productName = document.getElementById("productName").value;
 
-        if (productName.trim() === "") {
-            alert("Please enter a product name.");
+        var name = document.getElementById("customerName").value.trim();
+        var phone = document.getElementById("customerPhone").value.trim();
+        var address = document.getElementById("customerAddress").value.trim();
+        var productName = document.getElementById("productName").value.trim();
+
+        if (!name || !phone || !address || !productName) {
+            alert("Please fill all fields.");
             return;
         }
 
-        var whatsappMessage = "আমি " + productName + " এই পণ্যটি অর্ডার করতে চাই। অনুগ্রহ করে অর্ডারটি কনফার্ম করুন। ধন্যবাদ।";
-        var phoneNumber = "8801814973095";
+        var whatsappMessage =
+            "অর্ডার তথ্যঃ\n\n" +
+            "গ্রাহকের নাম: " + name + "\n" +
+            "ফোন নাম্বার: " + phone + "\n" +
+            "ঠিকানা: " + address + "\n" +
+            "অর্ডারকৃত পণ্য: " + productName + "\n\n" +
+            "আমি " + productName + " এই পণ্যটি অর্ডার করতে চাই। অনুগ্রহ করে অর্ডারটি কনফার্ম করুন। ধন্যবাদ।";
+
+        var phoneNumber = "8801814973095"; // WhatsApp receive number
 
         var encodedMessage = encodeURIComponent(whatsappMessage);
 
@@ -257,6 +273,8 @@
 </section>
 
 
+
+  <!-- ------More Product------ -->     
 <section class="products container">
   <h2 class="section-title">More Products</h2>
 
