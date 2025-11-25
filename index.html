@@ -165,16 +165,40 @@
         <div class="shop-item"><img src="images/item4.png" alt=""><h4>Authentic Pearl Jewelry</h4><p>৳ 1200</p></div>
         <div class="shop-item"><img src="images/item5.png" alt=""><h4>Gamcha bangles</h4><p>৳ 250</p></div>
         <div class="shop-item"><img src="images/item6.png" alt=""><h4>Gift Combo</h4><p>৳ 900</p></div> 
-        
-      <button class="btn order-now" 
-        onclick="orderNow('Product Name 1','https://rmutpal.github.io/Mrittika/images/product1.jpg','https://rmutpal.github.io/Mrittika/')">
-        Order Now
-      </button>
     </div>
       </div>
     </section>
 
-  <!-- Reviews -->
+
+ <!--------- Order Form--------- -->     
+<div class="order-form">
+    <input type="text" id="productName" placeholder="Enter product name" required>
+    <button id="orderButton">Send Order</button>
+</div>
+
+<script>
+    document.getElementById("orderButton").onclick = function() {
+        var productName = document.getElementById("productName").value;
+
+        if (productName.trim() === "") {
+            alert("Please enter a product name.");
+            return;
+        }
+
+        var whatsappMessage = "আমি " + productName + " এই পণ্যটি অর্ডার করতে চাই। অনুগ্রহ করে অর্ডারটি কনফার্ম করুন। ধন্যবাদ।";
+        var phoneNumber = "8801814973095";
+
+        var encodedMessage = encodeURIComponent(whatsappMessage);
+
+        var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodedMessage;
+
+        window.open(whatsappLink, "_blank");
+    };
+</script>
+
+
+      
+  <!-------- Reviews-------- -->
 <section class="reviews container">
   <h3 class="review-title">Customer Reviews</h3>
 
@@ -234,7 +258,7 @@
 
 
 <section class="products container">
-  <h2 class="section-title">Our Products</h2>
+  <h2 class="section-title">More Products</h2>
 
   <div class="items-grid">
     <!-- Product 1 -->
@@ -242,10 +266,7 @@
       <img src="images/product1.jpg" alt="Product 1">
       <h4>Product Name 1</h4>
       <p class="price">৳500</p>
-      <div class="payment-options">
-        <img src="images/payment1.png" alt="bKash">
-        <img src="images/payment2.png" alt="Nagad">
-        <img src="images/payment3.png" alt="Cash on Delivery">
+  
       </div>
       <button class="btn order-now" 
         onclick="orderNow('Product Name 1','https://rmutpal.github.io/Mrittika/images/product1.jpg','https://rmutpal.github.io/Mrittika/')">
@@ -259,9 +280,6 @@
       <h4>Product Name 2</h4>
       <p class="price">৳750</p>
       <div class="payment-options">
-        <img src="images/payment1.png" alt="bKash">
-        <img src="images/payment2.png" alt="Nagad">
-        <img src="images/payment3.png" alt="Cash on Delivery">
       </div>
       <button class="btn order-now" 
         onclick="orderNow('Product Name 2','https://rmutpal.github.io/Mrittika/images/product2.jpg','https://rmutpal.github.io/Mrittika/')">
